@@ -1,9 +1,11 @@
 "use strict";
 let str1;
 str1 = 'hello';
-str1 = new String('hello'); //报错
+str1.toUpperCase(); //⽆警告
 let str2;
 str2 = 'hello';
-str2 = new String('hello');
-console.log(typeof str1);
-console.log(typeof str2);
+str2.toUpperCase(); //⽆警告
+let str3;
+str3 = 'hello';
+str3.toUpperCase() //警告：“str3”的类型为“未知”
+(str3).toUpperCase(); //⽆警告
